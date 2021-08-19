@@ -1,0 +1,247 @@
+:root {
+    --prim: #131c29;
+    --sec: #ff8901;
+    --text: #596573;
+    --bgColor: #f4f4f6;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+
+/* fluid typography  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+
+/* generic */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+}
+
+p, li {
+    font-family: var(--textFont);
+}
+
+
+/* close generic */
+
+ /* header */
+
+.top-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: var(--prim);
+}
+
+.top-nav-item {
+    text-transform: uppercase;
+}
+
+.top-nav-item a {
+    color: var(--text);
+}
+
+.main-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 110%;
+    height: auto;
+}
+
+.main-nav-item {
+    padding: 1px 2px;
+    font-family: var(--headerFont);
+    font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    background-color: var(--buttonColor);
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.main-nav-item:hover {
+    background-color: var(--sec);
+}
+
+.main-nav-item a {
+    color: var(--bgColor);
+}
+
+ /* close header */
+
+ /* main */
+
+.main {
+    padding: 20px 0;
+}
+
+.content-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 40px 0;
+    }
+}
+
+.content .sub-header {
+    color: var(--prim);
+    font-family: var(--headerFont);
+    font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .content-img {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
+.content .text {
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300))); 
+}
+
+.more {
+    color: var(--bgColor);
+    text-transform: uppercase;
+    background-color: var(--buttonColor);
+    transition: background-color 0.5s ease;
+}
+
+.more:hover {
+    background-color: var(--sec);
+}
+
+ /* close main */
+
+/* footer */
+
+.main-footer {
+    padding: 20px 0;
+    background: radial-gradient(
+        at top right,
+        #33597e, #0e1620
+    );
+}
+
+@media (max-width: 768px) {
+    .footer-div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-div .sub-header {
+    margin-bottom: 40px;
+    color: var(--bgColor);
+    font-family: var(--headerFont);
+    font-size: calc(28px + (36 - 28) * ((100vw - 300px) / (1600 - 300))); 
+    text-transform: uppercase;
+}
+
+.service-list {
+    padding-left: 15px;
+    list-style-image: url('../media/cog.png');
+}
+
+.service-list-item a{
+    color: var(--bgColor);
+}
+
+.opportunities-list {
+    padding-left: 15px;
+    list-style-image: url('../media/chat.png');
+}
+
+.opportunities-list h3 a {
+    color: var(--bgColor);
+}
+
+.list-text {
+    color: var(--text);
+}
+
+.news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.news-list-item {
+    margin-bottom: 30px;
+}
+
+.date-div {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.div1 {
+    background: #be8442;
+}
+
+.div2 {
+    background-color: #bc6142;
+}
+
+.div3 {
+    background-color: #bd425e;
+}
+
+.date, .month {
+    margin: 0;
+    color: var(--bgColor);
+    font-family: var(--headerFont);
+    line-height: 1;
+}
+
+.date {
+    font-size: calc(28px + (36 - 28) * ((100vw - 300px) / (1600 - 300))); 
+    font-weight: 900;
+}
+
+.month {
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.news-content h3, .news-content p{
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.news-content h3 a {
+    color: var(--bgColor);
+}
+
+.footer-btn {
+    margin-top: 30px;
+}
+
+.colophon {
+    padding: 40px 0;
+    background-color: var(--prim);
+}
+
+.colophon-text {
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.scroll {
+    margin: 0;
+    padding: 0 0 40px 0;
+}
+/* close footer */
