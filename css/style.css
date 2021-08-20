@@ -36,7 +36,19 @@ p, li {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
+    font-size: calc(8px + (22 - 8) * ((100vw - 300px) / (1600 - 300)));
     background-color: var(--prim);
+
+}
+
+.top-link {
+    color: var(--text);
+    font-family: var(--textFont);
+    text-transform: uppercase;
+}
+
+.top-nav-list {
+    margin: 0;
 }
 
 .top-nav-item {
@@ -60,7 +72,7 @@ p, li {
 .main-nav-item {
     padding: 1px 2px;
     font-family: var(--headerFont);
-    font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(10px + (28 - 10) * ((100vw - 300px) / (1600 - 300)));
     text-transform: uppercase;
     background-color: var(--buttonColor);
     border-radius: 10px;
@@ -83,14 +95,34 @@ p, li {
     padding: 20px 0;
 }
 
+@media (min-width: 768px) {
+    .main {
+        padding-bottom: 0;
+    }
+}
+
 .content-section {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    .content-section {
+        margin-top: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .smart, .strong {
+        border-right: 1px solid #ddd;
+    }
+}
+
+@media (min-width: 767px) {
     .content {
-        margin: 40px 0;
+        padding:  0 5px;
+        height: 25vh;
     }
 }
 
@@ -110,7 +142,7 @@ p, li {
 }
 
 .content .text {
-    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300))); 
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300))); 
 }
 
 .more {
@@ -158,6 +190,12 @@ p, li {
 
 .service-list-item a{
     color: var(--bgColor);
+}
+
+@media (min-width: 768px) {
+    .service-list-item {
+        line-height: 2;
+    }
 }
 
 .opportunities-list {
@@ -243,5 +281,18 @@ p, li {
 .scroll {
     margin: 0;
     padding: 0 0 40px 0;
+}
+
+@media (min-width: 768px) {
+    .parent {
+        position: relative;
+        height: 32vh;
+        /* border: 1px solid white; */
+    }
+
+    .footer-btn {
+        position: absolute;
+        bottom: 0;
+    }
 }
 /* close footer */
